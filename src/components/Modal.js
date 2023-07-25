@@ -8,7 +8,7 @@ const [status,setStatus]=useState(false)
             <button className="modal-p" onClick={()=>setStatus(true)}>Show Modal</button>
             {
                 status? 
-                <div className="content">
+                <div className="content" onClick={()=>setStatus(false)}>
                 <button className="modal-close" onClick={()=>setStatus(false)}>Close Modal</button>
                 <p>This is the content of the modal</p>
                 </div>:
